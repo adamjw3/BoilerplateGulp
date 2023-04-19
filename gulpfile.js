@@ -62,7 +62,7 @@ gulp.task('stylesheets', function () {
     });
 });
 
-gulp.task('html', function () {
+gulp.task('html', async function () {
   gulp
     .src(['src/*.html'])
     .pipe(fileinclude())
