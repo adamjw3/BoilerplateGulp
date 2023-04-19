@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Expert Listing - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>
+    @@include('includes/component-info.html', { "title": "Expert Listing", "summary": "List of experts"})
+    @@include('components/expert-listing.html', { "title": "Expert name would go here", "image": false, "class": "", "latest": false})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

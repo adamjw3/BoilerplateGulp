@@ -1,0 +1,32 @@
+<div class="c-blog-listing">
+    <div class="container">
+        <div class="row">
+
+            @@if (header) {
+                <div class="c-blog-listing__header">
+                    <div class="c-blog-listing__header-inner">
+                        <p class="c-blog-listing__header-label">Showing posts in the category '<strong class="c-blog-listing__header-category">Category</strong>'</p>
+                        <a href="" class="c-btn c-btn--small">Show all posts</a>
+                    </div>
+                </div>
+            }
+
+            @@loop('blog-listing-item.html', [
+                { "title": "@@title", "image": "@@image", "class": "@@class"  },
+                { "title": "@@title", "image": "@@image", "class": "@@class"  },
+                { "title": "@@title", "image": "@@image", "class": "@@class"  },
+                { "title": "@@title", "image": "@@image", "class": "@@class"  }
+            ])
+
+            @@if (!latest) {
+                @@loop('blog-listing-item.html', [
+                    { "title": "@@title", "image": "@@image", "class": "@@class"  },
+                    { "title": "@@title", "image": "@@image", "class": "@@class"  },
+                    { "title": "@@title", "image": "@@image", "class": "@@class"  },
+                    { "title": "@@title", "image": "@@image", "class": "@@class"  }
+                ])
+            }
+
+        </div>
+    </div>
+</div>

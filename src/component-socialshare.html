@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Social Share - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>
+    @@include('includes/component-info.html', { "title": "Social Share", "summary": "List of social share links"})
+    @@include('components/socialshare.html', {"center": false})
+
+    @@include('includes/component-info.html', { "title": "Social Share", "summary": "List of social share links (center aligned)"})
+    @@include('components/socialshare.html', {"center": true})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/socialshare.min.js").wait(function() {
+        BESocialShare.Init();
+        FESocialShare.Init();
+    });
+</script>
+</body>
+</html>

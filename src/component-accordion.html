@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Accordion - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>
+    @@include('includes/component-info.html', { "title": "Accordion", "summary": "Vertically stacked list of collapsible items"})
+    @@include('components/accordion.html', { "identifier": "first"})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/accordion.min.js").wait(function() {
+        BEAccordion.Init();
+        FEAccordion.Init();
+    });
+</script>
+</body>
+</html>

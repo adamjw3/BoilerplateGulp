@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Filter Bar - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Filter Bar", "summary": "Filter bar that can be used to filter down a list of content"})
+    @@include('components/filter-bar.html')
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/filterbar.min.js").wait(function() {
+        BEFilterBar.Init();
+        FEFilterBar.Init();
+    });
+</script>
+</body>
+</html>

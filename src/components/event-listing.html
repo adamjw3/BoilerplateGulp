@@ -1,0 +1,22 @@
+<div class="c-event-listing">
+    <div class="container">
+        <div class="row">
+
+            @@loop('event-listing-item.html', [
+                { "title": "@@title", "image": @@image, "class": "@@class", "daterange": true  },
+                { "title": "@@title", "image": @@image, "class": "@@class", "daterange": false  },
+                { "title": "@@title", "image": @@image, "class": "@@class", "daterange": true  },
+                { "title": "@@title", "image": @@image, "class": "@@class", "daterange": false  }
+            ])
+
+            @@if(!latest) {
+                @@loop('event-listing-item.html', [
+                    { "title": "@@title", "image": @@image, "class": "@@class", "daterange": true  },
+                    { "title": "@@title", "image": @@image, "class": "@@class", "daterange": false  },
+                    { "title": "@@title", "image": @@image, "class": "@@class", "daterange": false  }
+                ])
+            }
+
+        </div>
+    </div>
+</div>

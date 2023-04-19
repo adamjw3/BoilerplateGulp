@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Masthead - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Masthead", "summary": "Normally used as a page heading"})
+    @@include('components/masthead.html', { "title": "Page heading would go here", "description": "lorem ipsum", "class": ""})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

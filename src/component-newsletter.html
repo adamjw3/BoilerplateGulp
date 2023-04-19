@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Newsletter Signup - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<form>
+    <main id="main-content">
+        @@include('includes/component-info.html', { "title": "Newsletter Signup", "summary": "Mailing list sign up form"})
+        @@include('components/newsletter.html', { "title": "Sign up to receive news and more", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.", "class": "", "errormessage": false, "successmessage": false})
+
+
+        @@include('includes/component-info.html', { "title": "Newsletter Signup", "summary": "With error message"})
+        @@include('components/newsletter.html', { "title": "Sign up to receive news and more", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.", "class": "", "errormessage": true, "successmessage": false})
+
+
+        @@include('includes/component-info.html', { "title": "Newsletter Signup", "summary": "With success message"})
+        @@include('components/newsletter.html', { "title": "Sign up to receive news and more", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.", "class": "", "errormessage": false, "successmessage": true})
+
+    </main>
+</form>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

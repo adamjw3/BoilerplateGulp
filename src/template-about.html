@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: About - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    <article>
+        @@include('components/masthead.html', { "title": "About Us", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit purus ex, eget molestie quam rutrum vitae. In egestas faucibus magna, vel malesuada mi tempor a.", "bgimage": false, "class": ""})
+
+        @@include('components/content.html', { "title": "Content block title would go here", "error": false})
+    </article>
+</main>
+
+
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

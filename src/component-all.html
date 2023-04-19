@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: All - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Accordion", "summary": "Vertically stacked list of collapsible items"})
+    @@include('components/accordion.html', { "identifier": "first"})
+
+    @@include('includes/component-info.html', { "title": "Author", "summary": "Normally used on a blog article page"})
+    @@include('components/author.html')
+
+    @@include('includes/component-info.html', { "title": "Blockquote", "summary": "Quotation with optional author credit"})
+    @@include('components/blockquote.html', { "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quis nunc nec iaculis. Aliquam commodo urna eu mi efficitur accumsan.", "authorname": "Author Credit"})
+
+    @@include('includes/component-info.html', { "title": "Blog Article", "summary": "Blog article header &amp; content"})
+    @@include('components/blog-article.html')
+
+    @@include('includes/component-info.html', { "title": "Blog Listing", "summary": "List of blog articles"})
+    @@include('components/blog-listing.html', { "title": "Blog article title would go here", "header": false, "image": true, "class": "", "latest": false})
+
+    @@include('includes/component-info.html', { "title": "Breadcrumb", "summary": "Indicate the current page’s location within a navigational hierarchy"})
+    @@include('components/breadcrumb.html')
+
+    @@include('includes/component-info.html', { "title": "Call to action", "summary": "Promotional message with links"})
+    @@include('components/cta.html', { "title": "Promotional title would go here", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.", "link1": "Call to action", "link2": "Call to action", "class": ""})
+
+    @@include('includes/component-info.html', { "title": "Carousel", "summary": "Used to display multiple items in the same place"})
+    @@include('components/carousel.html', { "bgimage": false})
+
+    @@include('includes/component-info.html', { "title": "Carousel", "summary": "Used for generic pieces of content"})
+    @@include('components/content.html', { "title": "Content block title would go here", "error": false})
+
+    @@include('includes/component-info.html', { "title": "Disqus", "summary": ""})
+    @@include('components/disqus.html')
+
+    @@include('includes/component-info.html', { "title": "Event Article", "summary": "Detailed info about an event"})
+    @@include('components/event-article.html')
+
+    @@include('includes/component-info.html', { "title": "Event Listing", "summary": "List of events"})
+    @@include('components/event-listing.html', { "title": "Event title would go here", "image": false, "class": "", "latest": false})
+
+    @@include('includes/component-info.html', { "title": "Expert Article", "summary": "Detailed info about an expert"})
+    @@include('components/expert-article.html')
+
+    @@include('includes/component-info.html', { "title": "Expert Listing", "summary": "List of experts"})
+    @@include('components/expert-listing.html', { "title": "Expert name would go here", "image": false, "class": "", "latest": false})
+
+    @@include('includes/component-info.html', { "title": "Filter Bar", "summary": "Filter bar that can be used to filter down a list of content"})
+    @@include('components/filter-bar.html')
+
+    @@include('includes/component-info.html', { "title": "Image", "summary": "Large image with optional caption"})
+    @@include("components/image.html", { "caption": "Caption would go here"})
+
+    @@include('includes/component-info.html', { "title": "Listing", "summary": "List of articles"})
+    @@include('components/listing.html', { "title": "Listing title would go here", "image": true, "class": ""})
+
+    @@include('includes/component-info.html', { "title": "Masthead", "summary": "Normally used as a page heading"})
+    @@include('components/masthead.html', { "title": "Page heading would go here", "description": "lorem ipsum", "class": ""})
+
+    @@include('includes/component-info.html', { "title": "Newsletter Signup", "summary": "Mailing list sign up form"})
+    @@include('components/newsletter.html', { "title": "Sign up to receive news and more", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.", "class": "", "errormessage": false, "successmessage": false})
+
+    @@include('includes/component-info.html', { "title": "Pagination", "summary": "Used on a long list of items"})
+    @@include('components/pagination.html')
+
+    @@include('includes/component-info.html', { "title": "Resource Article", "summary": "Detailed info about a resource"})
+    @@include('components/resource-article.html')
+
+    @@include('includes/component-info.html', { "title": "Resource Download", "summary": "Download is locked - requires user to add their email address"})
+    @@include('components/resource-download.html', {"form": true})
+
+    @@include('includes/component-info.html', { "title": "Resource Listing", "summary": "List of Resources"})
+    @@include('components/resource-listing.html')
+
+    @@include('includes/component-info.html', { "title": "Search Result", "summary": "List of results"})
+    @@include('components/searchresults.html')
+
+    @@include('includes/component-info.html', { "title": "Section Heading", "summary": "Title & summary to introduce section"})
+    @@include('components/sectionheading.html', { "title": "Section Heading", "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex."})
+
+    <@@include('includes/component-info.html', { "title": "Social Links", "summary": "List of social links"})
+    @@include('components/sociallinks.html', {"center": false})
+
+    @@include('includes/component-info.html', { "title": "Social Share", "summary": "List of social share links"})
+    @@include('components/socialshare.html', {"center": false})
+
+    @@include('includes/component-info.html', { "title": "Tabs", "summary": "Tabbed content"})
+    @@include('components/tabs.html', { "identifier": "first"})
+
+    @@include('includes/component-info.html', { "title": "Tag List", "summary": "List of tags"})
+    @@include('components/taglist.html')
+
+    @@include('includes/component-info.html', { "title": "Twitter Feed", "summary": "Display latest tweets"})
+    @@include('components/twitterfeed.html')
+</main>
+@@include('components/footer.html')
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/plugins/slick.min.js")
+    .script("/resources/js/accordion.min.js").wait(function() {
+        BEAccordion.Init();
+        FEAccordion.Init();
+    })
+    .script("/resources/js/carousel.min.js").wait(function() {
+        BECarousel.Init();
+        FECarousel.Init();
+    })
+    .script("/resources/js/socialshare.min.js").wait(function() {
+        BESocialShare.Init();
+        FESocialShare.Init();
+    })
+    .script("/resources/js/tabs.min.js").wait(function() {
+        BETabs.Init();
+        FETabs.Init();
+    })
+    .script("//www.google.com/recaptcha/api.js").wait()
+    .script("/resources/js/download.min.js").wait(function() {
+        BEDownload.Init();
+        FEDownload.Init();
+    });
+</script>
+</body>
+</html>

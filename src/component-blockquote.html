@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Blockquote - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+
+    @@include('includes/component-info.html', { "title": "Blockquote", "summary": "Quotation with optional author credit"})
+    @@include('components/blockquote.html', { "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quis nunc nec iaculis. Aliquam commodo urna eu mi efficitur accumsan.", "authorname": "Author Credit"})
+
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

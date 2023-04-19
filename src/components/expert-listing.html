@@ -1,0 +1,22 @@
+<div class="c-expert-listing">
+    <div class="container">
+        <div class="row">
+
+            @@loop('expert-listing-item.html', [
+                { "title": "@@title", "image": @@image, "class": "@@class" },
+                { "title": "@@title", "image": @@image, "class": "@@class" },
+                { "title": "@@title", "image": @@image, "class": "@@class" },
+                { "title": "@@title", "image": @@image, "class": "@@class" }
+            ])
+
+            @@if(!latest) {
+                <@@loop('expert-listing-item.html', [
+                    { "title": "@@title", "image": @@image, "class": "@@class" },
+                    { "title": "@@title", "image": @@image, "class": "@@class" },
+                    { "title": "@@title", "image": @@image, "class": "@@class" }
+                ])
+            }
+
+        </div>
+    </div>
+</div>

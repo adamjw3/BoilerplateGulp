@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Resource Download - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<form>
+<main>
+    @@include('includes/component-info.html', { "title": "Resource Download", "summary": "Download is locked - requires user to add their email address"})
+    @@include('components/resource-download.html', {"form": true})
+
+    @@include('includes/component-info.html', { "title": "Resource Download", "summary": "Download is unlocked"})
+    @@include('components/resource-download.html', {"form": false})
+
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("//www.google.com/recaptcha/api.js").wait()
+    .script("/resources/js/download.min.js").wait(function() {
+        BEDownload.Init();
+        FEDownload.Init();
+    });
+</script>
+</form>
+</body>
+</html>

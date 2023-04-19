@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Tabs - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>
+    @@include('includes/component-info.html', { "title": "Tabs", "summary": "Tabbed content"})
+    @@include('components/tabs.html', { "identifier": "first"})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/tabs.min.js").wait(function() {
+        BETabs.Init();
+        FETabs.Init();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: Event Article - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    <article>
+        @@include('components/breadcrumb.html')
+        @@include('components/event-article.html')
+        @@include('components/sectionheading.html', { "title": "SRelated Events", "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex."})
+        @@include('components/event-listing.html', { "title": "Event name would go here", "image": true, "class": "", "latest": true})
+    </article>
+</main>
+@@include('components/footer.html')
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

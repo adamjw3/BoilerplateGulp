@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: Homepage - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    <article>
+        @@include('components/masthead.html', { "title": "Welcome to our site", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit purus ex, eget molestie quam rutrum vitae. In egestas faucibus magna, vel malesuada mi tempor a.", "bgimage": false, "class": ""})
+        @@include('components/carousel.html', {"bgimage": false})
+        @@include('components/sectionheading.html', { "title": "Latest Blog Posts", "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex."})
+        @@include('components/blog-listing.html', { "title": "Blog article title would go here", "header": false, "image": true, "class": "", "latest": true})
+        @@include("components/image.html", { "caption": "Caption would go here"})
+        @@include('components/sectionheading.html', { "title": "Latest Events", "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex."})
+        @@include('components/event-listing.html', { "title": "Event title would go here", "image": false, "class": "", "latest": true})
+        @@include('components/twitterfeed.html')
+        @@include('components/newsletter.html', { "title": "Sign up to receive news and more", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.", "class": "", "errormessage": false, "successmessage": false})
+    </article>
+</main>
+@@include('components/footer.html')
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/plugins/slick.min.js")
+    .script("/resources/js/carousel.min.js").wait(function() {
+        BECarousel.Init();
+        FECarousel.Init();
+    });
+</script>
+</body>
+</html>

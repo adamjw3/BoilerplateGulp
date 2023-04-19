@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Blog Listing - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>
+
+    @@include('includes/component-info.html', { "title": "Blog Listing", "summary": "List of blog articles"})
+    @@include('components/blog-listing.html', { "title": "Blog article title would go here", "header": false, "image": true, "class": "", "latest": false})
+
+    @@include('includes/component-info.html', { "title": "Blog Listing", "summary": "List of blog articles filtered by a category"})
+    @@include('components/blog-listing.html', { "title": "Blog article title would go here", "header": true, "image": true, "class": "", "latest": false})
+
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

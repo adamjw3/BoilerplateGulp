@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: Error - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    <article>
+        @@include('components/masthead.html', { "title": "Page Error", "description": "",  "class": ""})
+        @@include('components/content.html', { "title": "Unfortunately the page you tried to access was unavailable", "error": true})
+    </article>
+</main>
+@@include('components/footer.html')
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Listing - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Listing", "summary": "List of articles"})
+    @@include('components/listing.html', { "title": "Listing title would go here", "image": true, "class": ""})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

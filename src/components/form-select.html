@@ -1,0 +1,15 @@
+<div class="c-form__select-field @@class">
+    <label for="{{id}}" class="c-form__label">@@label</label>
+    <div class="c-selectbox">
+        @@if(required) {
+            <select class="c-selectbox__select" id="@@id" required>
+        }
+
+                @@if(!required) {
+            <select class="c-selectbox__select" id="@@id">
+        }
+            <option value="">Please select</option>
+            <option value="">Option</option>
+        </select>
+    </div>
+</div>

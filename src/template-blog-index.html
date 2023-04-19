@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: Blog Index - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    <article>
+        @@include('components/masthead.html', { "title": "Blog Index", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend",  "class": ""})
+        @@include('components/blog-listing.html', { "title": "Blog article title would go here", "header": false, "image": true, "class": "", "latest": false})
+        @@include('components/pagination.html')
+    </article>
+</main>
+@@include('components/footer.html')
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

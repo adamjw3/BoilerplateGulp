@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Social Links - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>=
+    @@include('includes/component-info.html', { "title": "Social Links", "summary": "List of social links"})
+    @@include('components/sociallinks.html', {"center": false})
+
+    @@include('includes/component-info.html', { "title": "Social Links", "summary": "List of social links (center aligned)"})
+    @@include('components/sociallinks.html', {"center": true})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

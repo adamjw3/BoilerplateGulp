@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Twitter Feed - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Twitter Feed", "summary": "Display latest tweets"})
+    @@include('components/twitterfeed.html')
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

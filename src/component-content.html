@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Content - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Carousel", "summary": "Used for generic pieces of content"})
+    @@include('components/content.html', { "title": "Content block title would go here", "error": false})
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+</body>
+</html>

@@ -1,0 +1,31 @@
+<section class="c-carousel">
+    <div class="container">
+        <div class="row">
+            <div class="c-carousel__wrapper">
+                <div class="c-carousel__slides js-carousel-slides">
+
+                    @@for (var i = 0; i < 4; i++) {
+
+                        @@if (bgimage) {
+                            <div class="c-carousel__slide lazyload" data-bgset="http://placehold.it/1600x900?width=1600 [(min-width: 1200px)] |
+                                    http://placehold.it/1000x563?width=100 [(min-width: 768px)] |
+                                    http://placehold.it/600x338?width=600 [(min-width: 300px)]">
+                            }
+
+                        @@if (!bgimage) {
+                            <div class="c-carousel__slide">
+                        }
+                            <div class="c-carousel__slide-content">
+                                <h2 class="c-carousel__slide-title heading">Carousel Slide Title</h2>
+                                <p class="c-carousel__slide-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.</p>
+                                <a href="" class="c-btn c-carousel__slide-link">Call to action</a>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+                <div class="c-carousel__pagination js-carousel-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>

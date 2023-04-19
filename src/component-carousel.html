@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Carousel - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main id="main-content">
+    @@include('includes/component-info.html', { "title": "Carousel", "summary": "Used to display multiple items in the same place"})
+    @@include('components/carousel.html', { "bgimage": false})
+
+    @@include('includes/component-info.html', { "title": "Carousel", "summary": "Used to display multiple items in the same place (with background image"})
+    @@include('components/carousel.html', { "bgimage": true})
+
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/plugins/slick.min.js")
+    .script("/resources/js/carousel.min.js").wait(function() {
+        BECarousel.Init();
+        FECarousel.Init();
+    });
+</script>
+</body>
+</html>

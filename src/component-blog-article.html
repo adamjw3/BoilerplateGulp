@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Components: Blog Article - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+<main>
+    <article id="js-blog-article-content">
+        @@include('includes/component-info.html', { "title": "Blog Article", "summary": "Blog article header &amp; content"})
+        @@include('components/blog-article.html')
+    </article>
+</main>
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/blogarticle.min.js").wait(function() {
+        BEBlogArticle.Init();
+        FEBlogArticle.Init();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: Blog Article - @@include('includes/sitename.html')</title>
+    @@include('includes/head.html')
+</head>
+<body>
+@@include('components/navbar.html')
+<main id="main-content">
+    <article id="js-blog-article-content">
+        @@include('components/breadcrumb.html')
+        @@include('components/blog-article.html')
+        @@include('components/blockquote.html', { "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quis nunc nec iaculis. Aliquam commodo urna eu mi efficitur accumsan.", "authorname": "Author Credit"})
+        @@include('components/content.html', { "title": "Additional Blog Content", "error": false})
+        @@include('components/taglist.html')
+        @@include('components/author.html')
+        @@include('components/socialshare.html', {"center": true})
+        @@include('components/sectionheading.html', { "title": "Related Blog Posts", "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex."})
+        @@include('components/blog-listing.html', { "title": "Blog article title would go here", "header": false, "image": true, "class": "", "latest": true})
+    </article>
+</main>
+@@include('components/footer.html')
+@@include('includes/labjs-debug.html')
+@@include('includes/globaljs.html')
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/blogarticle.min.js").wait(function() {
+        BEBlogArticle.Init();
+        FEBlogArticle.Init();
+    });
+</script>
+</body>
+</html>

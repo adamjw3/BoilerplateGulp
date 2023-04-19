@@ -1,0 +1,9 @@
+<div class="c-form__textbox-field @@class">
+    <label for="@@id" class="c-form__label">@@label</label>
+    @@if(required) {
+        <input id="@@id" type="@@type" class="c-form__textbox" required />
+    }
+    @@if(!required) {
+        <input id="@@id" type="@@type" class="c-form__textbox" />
+   }
+</div>
