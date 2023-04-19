@@ -34,12 +34,12 @@ function getFolders(dir) {
 gulp.task('images', function () {
   gulp
     .src('src/resources/images/**/*')
-    .pipe(newer('dist/resources/images'))
+    .pipe(newer('docs/resources/images'))
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/resources/images'))
+    .pipe(gulp.dest('docs/resources/images'))
     .pipe(filter('**/*.png', { restore: true }))
     .pipe(tingpng('bL0oDgQc5kc58M6TeL3koOkKQFZGMd_6'))
-    .pipe(gulp.dest('dist/resources/images'));
+    .pipe(gulp.dest('docs/resources/images'));
 });
 
 gulp.task('stylesheets', function () {
@@ -48,7 +48,7 @@ gulp.task('stylesheets', function () {
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(gcmq())
     .pipe(postcss(plugins))
-    .pipe(gulp.dest('dist/resources/css/'))
+    .pipe(gulp.dest('docs/resources/css/'))
     .pipe(cleanCSS({ compatibility: 'ie10' }))
     .pipe(
       rename({
@@ -56,7 +56,7 @@ gulp.task('stylesheets', function () {
       })
     )
     .pipe(size({ title: 'css' }))
-    .pipe(gulp.dest('dist/resources/css/'))
+    .pipe(gulp.dest('docs/resources/css/'))
     .on('end', function () {
       browserSync.reload();
     });
@@ -66,7 +66,7 @@ gulp.task('html', function () {
   gulp
     .src(['src/*.html'])
     .pipe(fileinclude())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
     .on('end', function () {
       browserSync.reload();
     });
@@ -82,11 +82,11 @@ gulp.task('javascript', function () {
       .pipe(jshint.reporter('default'))
       .pipe(concat(folder + '.js'))
       .pipe(babel())
-      .pipe(gulp.dest('dist/resources/js/'))
+      .pipe(gulp.dest('docs/resources/js/'))
       .pipe(uglify())
       .pipe(rename({ suffix: '.min' }))
       .pipe(size({ title: 'js' }))
-      .pipe(gulp.dest('dist/resources/js/'))
+      .pipe(gulp.dest('docs/resources/js/'))
       .on('end', function () {
         browserSync.reload();
       });
@@ -98,11 +98,11 @@ gulp.task('javascript', function () {
 gulp.task('plugins', function () {
   return gulp
     .src('src/resources/js/plugins/*.js')
-    .pipe(newer('dist/resources/js/plugins'))
+    .pipe(newer('docs/resources/js/plugins'))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(size({ title: 'js' }))
-    .pipe(gulp.dest('dist/resources/js/plugins'))
+    .pipe(gulp.dest('docs/resources/js/plugins'))
     .on('end', function () {
       browserSync.reload();
     });
@@ -111,7 +111,7 @@ gulp.task('plugins', function () {
 gulp.task('default', function () {
   browserSync.init({
     server: {
-      baseDir: './dist',
+      baseDir: './docs',
     },
   });
 

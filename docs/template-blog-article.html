@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Templates: Blog Article - Boilerplate</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/site.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+<meta property="og:title" content=""/>
+<meta property="og:description" content=""/>
+<meta property="og:image" content="/resources/images/social-share.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@twitterhandle"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:image" content="/resources/images/social-share.jpg"/>
+<script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+     * http://modernizr.com/download/?-touchevents-mq-setclasses-shiv !*/
+    !function(e,t,n){function o(e,t){return typeof e===t}function a(){var e,t,n,a,r,i,s;for(var c in u)if(u.hasOwnProperty(c)){if(e=[],t=u[c],t.name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(n=0;n<t.options.aliases.length;n++)e.push(t.options.aliases[n].toLowerCase());for(a=o(t.fn,"function")?t.fn():t.fn,r=0;r<e.length;r++)i=e[r],s=i.split("."),1===s.length?Modernizr[s[0]]=a:(!Modernizr[s[0]]||Modernizr[s[0]]instanceof Boolean||(Modernizr[s[0]]=new Boolean(Modernizr[s[0]])),Modernizr[s[0]][s[1]]=a),l.push((a?"":"no-")+s.join("-"))}}function r(e){var t=f.className,n=Modernizr._config.classPrefix||"";if(m&&(t=t.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");t=t.replace(o,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(t+=" "+n+e.join(" "+n),m?f.className.baseVal=t:f.className=t)}function i(){return"function"!=typeof t.createElement?t.createElement(arguments[0]):m?t.createElementNS.call(t,"http://www.w3.org/2000/svg",arguments[0]):t.createElement.apply(t,arguments)}function s(){var e=t.body;return e||(e=i(m?"svg":"body"),e.fake=!0),e}function c(e,n,o,a){var r,c,l,u,d="modernizr",m=i("div"),h=s();if(parseInt(o,10))for(;o--;)l=i("div"),l.id=a?a[o]:d+(o+1),m.appendChild(l);return r=i("style"),r.type="text/css",r.id="s"+d,(h.fake?h:m).appendChild(r),h.appendChild(m),r.styleSheet?r.styleSheet.cssText=e:r.appendChild(t.createTextNode(e)),m.id=d,h.fake&&(h.style.background="",h.style.overflow="hidden",u=f.style.overflow,f.style.overflow="hidden",f.appendChild(h)),c=n(m,e),h.fake?(h.parentNode.removeChild(h),f.style.overflow=u,f.offsetHeight):m.parentNode.removeChild(m),!!c}var l=[],u=[],d={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){u.push({name:e,fn:t,options:n})},addAsyncTest:function(e){u.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=d,Modernizr=new Modernizr;var f=t.documentElement,m="svg"===f.nodeName.toLowerCase();m||!function(e,t){function n(e,t){var n=e.createElement("p"),o=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",o.insertBefore(n.lastChild,o.firstChild)}function o(){var e=E.elements;return"string"==typeof e?e.split(" "):e}function a(e,t){var n=E.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),E.elements=n+" "+e,l(t)}function r(e){var t=y[e[v]];return t||(t={},g++,e[v]=g,y[g]=t),t}function i(e,n,o){if(n||(n=t),d)return n.createElement(e);o||(o=r(n));var a;return a=o.cache[e]?o.cache[e].cloneNode():p.test(e)?(o.cache[e]=o.createElem(e)).cloneNode():o.createElem(e),!a.canHaveChildren||h.test(e)||a.tagUrn?a:o.frag.appendChild(a)}function s(e,n){if(e||(e=t),d)return e.createDocumentFragment();n=n||r(e);for(var a=n.frag.cloneNode(),i=0,s=o(),c=s.length;c>i;i++)a.createElement(s[i]);return a}function c(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return E.shivMethods?i(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+o().join().replace(/[\w\-:]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(E,t.frag)}function l(e){e||(e=t);var o=r(e);return!E.shivCSS||u||o.hasCSS||(o.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),d||c(e,o),e}var u,d,f="3.7.3",m=e.html5||{},h=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,v="_html5shiv",g=0,y={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",u="hidden"in e,d=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return"undefined"==typeof e.cloneNode||"undefined"==typeof e.createDocumentFragment||"undefined"==typeof e.createElement}()}catch(n){u=!0,d=!0}}();var E={elements:m.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:f,shivCSS:m.shivCSS!==!1,supportsUnknownElements:d,shivMethods:m.shivMethods!==!1,type:"default",shivDocument:l,createElement:i,createDocumentFragment:s,addElements:a};e.html5=E,l(t),"object"==typeof module&&module.exports&&(module.exports=E)}("undefined"!=typeof e?e:this,t);var h=d._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];d._prefixes=h;var p=function(){var t=e.matchMedia||e.msMatchMedia;return t?function(e){var n=t(e);return n&&n.matches||!1}:function(t){var n=!1;return c("@media "+t+" { #modernizr { position: absolute; } }",function(t){n="absolute"==(e.getComputedStyle?e.getComputedStyle(t,null):t.currentStyle).position}),n}}();d.mq=p;var v=d.testStyles=c;Modernizr.addTest("touchevents",function(){var n;if("ontouchstart"in e||e.DocumentTouch&&t instanceof DocumentTouch)n=!0;else{var o=["@media (",h.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");v(o,function(e){n=9===e.offsetTop})}return n}),a(),r(l),delete d.addTest,delete d.addAsyncTest;for(var g=0;g<Modernizr._q.length;g++)Modernizr._q[g]();e.Modernizr=Modernizr}(window,document);
+</script>
+<link href="/favicon.ico" type="image/ico" rel="icon"/>
+<link rel="apple-touch-icon" href="/resources/images/icons/apple-touch-icon.png"/>
+<link rel="manifest" href="/resources/images/icons/manifest.json"/>
+</head>
+<body>
+﻿<a href="#main-content" class="u-visually-hide">Skip to content</a>
+<nav class="c-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="c-navbar__wrapper">
+                <a href="template-homepage.html" class="c-navbar__brand"><img src="/resources/images/logo.svg" alt="Exposure" /></a>
+                <div class="c-navbar__links" id="js-navbar-links">
+                    <ul class="c-navbar__list">
+                        <li class="c-navbar__item"><a href="template-about.html" class="c-navbar__link is-active" aria-current="page">About</a></li>
+                        <li class="c-navbar__item"><a href="template-blog-article.html" class="c-navbar__link">Blog</a></li>
+                        <li class="c-navbar__item"><a href="template-event-index.html" class="c-navbar__link">Events</a></li>
+                        <li class="c-navbar__item"><a href="template-expert-index.html" class="c-navbar__link">Experts</a></li>
+                        <li class="c-navbar__item"><a href="template-contact.html" class="c-navbar__link">Contact us</a></li>
+                    </ul>
+                </div>
+                <button class="c-navbar__menu" id="js-navbar-menu-toggle" aria-controls="js-navbar-links" type="button"><i class="icon-burger" aria-hidden="true"></i><span class="u-visually-hide">Menu</span></button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main id="main-content">
+    <article id="js-blog-article-content">
+        <nav class="c-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <span class="u-visually-hide" id="label-breadcrumb">You are here:</span>
+            <div class="c-breadcrumb__wrapper">
+                <ol class="c-breadcrumb__items" aria-labelledby="label-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                    <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a href="" class="c-breadcrumb__link" itemscope itemtype="http://schema.org/Thing" itemprop="item">
+                            <span itemprop="name">Home</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a href="" class="c-breadcrumb__link" itemscope itemtype="http://schema.org/Thing" itemprop="item">
+                            <span itemprop="name">News</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                    <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a class="c-breadcrumb__link is-active" aria-current="location" itemscope itemtype="http://schema.org/Thing" itemprop="item">
+                            <span itemprop="name">News Article</span>
+                        </a>
+                        <meta itemprop="position" content="3" />
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class="c-blog-article" itemscope itemtype="http://schema.org/NewsArticle">
+    <link itemprop="mainEntityOfPage" href="http://www.sitename.com/component-blog-article.html"/> <!-- replace this with article url -->
+    <progress value="0" class="c-blog-article__progress-bar" id="js-blog-article-progress-bar"></progress>
+    <div class="container">
+        <div class="row">
+            <div class="c-blog-article__content">
+                <div class="c-blog-article__header-container">
+                    <h1 class="c-blog-article__title heading-large" itemprop="headline">Blog article title would go here</h1>
+
+                    <ul class="c-blog-article__meta">
+                        <li class="c-blog-article__meta-item">
+                            <time class="c-blog-article__meta-value" content="2017-01-01" itemprop="datePublished" datetime="2017-01-01">1st Jan 2017</time>
+                        </li>
+                        <li class="c-blog-article__meta-item" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <span class="c-blog-article__meta-value" itemprop="name">Author</span>
+                        </li>
+                        <li class="c-blog-article__meta-item">
+                            <span class="c-blog-article__meta-value">5 mins read</span>
+                        </li>
+                        <li class="c-blog-article__meta-item">
+                            <span class="c-blog-article__meta-value"><a href="#" class="c-blog-article__category">Category</a>, <a href="#" class="c-blog-article__category">Category</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-blog-article__content-container cms-content">
+                    <p>Mauris laoreet metus sit amet felis congue, id condimentum nulla placerat. Maecenas efficitur mollis tortor vitae convallis. Vestibulum quam arcu, vehicula eget eros at, venenatis aliquet felis. Aenean gravida, tellus non condimentum scelerisque, augue mauris hendrerit mauris, et consequat urna enim vitae libero. Vivamus vel rutrum sapien, faucibus iaculis enim. Curabitur consequat ac quam ut interdum.</p>
+                    <h2>Heading</h2>
+                    <p>Duis eget nisl sit amet nulla vehicula hendrerit. Morbi gravida id risus in euismod. Quisque elit diam, finibus vel odio sit amet, pretium interdum enim. Nunc convallis dui vitae mauris semper, at sollicitudin ante molestie. Ut posuere pellentesque congue. Aenean ac turpis at velit sollicitudin fermentum quis et neque. Nunc dapibus pharetra interdum.</p>
+                    <p>Vestibulum molestie diam tincidunt dui feugiat, non dignissim sem dapibus. Ut condimentum vehicula venenatis. Aenean pharetra turpis eget tellus ultricies consectetur. Duis porttitor ullamcorper libero. Maecenas sit amet lorem ipsum. Etiam id justo sodales, efficitur orci id, volutpat lorem. Pellentesque id faucibus erat, at efficitur felis. Nullam pretium tristique tortor, nec facilisis elit accumsan vel. Nam non facilisis lorem.</p>
+                    <h3>Heading</h3>
+                    <p>Mauris laoreet metus sit amet felis congue, id condimentum nulla placerat. Maecenas efficitur mollis tortor vitae convallis. Vestibulum quam arcu, vehicula eget eros at, venenatis aliquet felis. Aenean gravida, tellus non condimentum scelerisque, augue mauris hendrerit mauris, et consequat urna enim vitae libero. Vivamus vel rutrum sapien, faucibus iaculis enim. Curabitur consequat ac quam ut interdum.</p>
+                    <img src="http://placehold.it/225x300/000/fff?width=225" alt="Placeholder image" style="float: right;" />
+                    <p>Duis eget nisl sit amet nulla vehicula hendrerit. Morbi gravida id risus in euismod. Quisque elit diam, finibus vel odio sit amet, pretium interdum enim. Nunc convallis dui vitae mauris semper, at sollicitudin ante molestie. Ut posuere pellentesque congue. Aenean ac turpis at velit sollicitudin fermentum quis et neque. Nunc dapibus pharetra interdum.</p>
+                    <h4>Heading</h4>
+                    <p>Vestibulum molestie diam tincidunt dui feugiat, non dignissim sem dapibus. Ut condimentum vehicula venenatis. Aenean pharetra turpis eget tellus ultricies consectetur. Duis porttitor ullamcorper libero. Maecenas sit amet lorem ipsum. Etiam id justo sodales, efficitur orci id, volutpat lorem. Pellentesque id faucibus erat, at efficitur felis. Nullam pretium tristique tortor, nec facilisis elit accumsan vel. Nam non facilisis lorem.</p>
+                    <p>Duis eget nisl sit amet nulla vehicula hendrerit. Morbi gravida id risus in euismod. Quisque elit diam, finibus vel odio sit amet, pretium interdum enim. Nunc convallis dui vitae mauris semper, at sollicitudin ante molestie. Ut posuere pellentesque congue. Aenean ac turpis at velit sollicitudin fermentum quis et neque. Nunc dapibus pharetra interdum.</p>
+                    <iframe src="https://www.youtube.com/embed/DBXH9jJRaDk?showinfo=0"></iframe>
+                    <p>Duis eget nisl sit amet nulla vehicula hendrerit. Morbi gravida id risus in euismod. Quisque elit diam, finibus vel odio sit amet, pretium interdum enim. Nunc convallis dui vitae mauris semper, at sollicitudin ante molestie. Ut posuere pellentesque congue. Aenean ac turpis at velit sollicitudin fermentum quis et neque. Nunc dapibus pharetra interdum.</p>
+                </div>
+            </div>
+
+            <!-- meta data related to the article - an image that will appear in search results -->
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="http://placehold.it/800x800"/> <!-- replace this with summary image url -->
+                <meta itemprop="width" content="800"/> <!-- replace this with summary image width -->
+                <meta itemprop="height" content="800"/> <!-- replace this with summary image height -->
+            </div>
+
+            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <meta itemprop="url" content="http://placehold.it/160x90"/> <!-- replace this with site logo image url -->
+                    <meta itemprop="width" content="160"/> <!-- replace this with site logo image width -->
+                    <meta itemprop="height" content="90"/> <!-- replace this with site logo image height -->
+                </div>
+                <meta itemprop="name" content="Exposure"/> <!-- replace this with site name -->
+            </div>
+        </div>
+    </div>
+</div>
+        <blockquote class="c-blockquote {{class}}">
+    <div class="container">
+        <div class="row">
+            <div class="c-blockquote__content-container">
+                <p class="c-blockquote__quote para-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis quis nunc nec iaculis. Aliquam commodo urna eu mi efficitur accumsan.</p>
+                
+                    <footer class="c-blockquote__author">
+                        <p class="c-blockquote__author-name">Author Credit</p>
+                    </footer>
+                
+            </div>
+        </div>
+    </div>
+</blockquote>
+
+        <section class="c-content {{class}}">
+    <div class="container">
+        <div class="row">
+            <div class="c-content__content-container">
+                <div class="row">
+                    <div class="c-content__title-container">
+                        <h2 class="c-content__title heading">Additional Blog Content</h2>
+                    </div>
+
+                    <div class="c-content__summary-container">
+                        <div class="cms-content">
+
+                            
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit purus ex, eget molestie quam rutrum vitae. In egestas faucibus magna, vel malesuada mi tempor a. Sed lacinia consequat nibh eu ornare. Vivamus vitae facilisis neque. Vestibulum ornare quam lorem, sit amet sodales tortor lobortis ac. Mauris elementum, lectus id luctus porta, ligula magna sagittis mauris, id sodales purus tortor eu diam. Aenean ac egestas neque. Morbi dignissim nunc erat, faucibus egestas augue ornare ac. Donec id lacus metus. Pellentesque sit amet erat orci. Nunc vehicula aliquam nunc, eget hendrerit ex dignissim sit amet. Suspendisse quis congue ex. Etiam iaculis consectetur urna ornare molestie. Vivamus vehicula elit sed risus porta posuere. Vivamus et nunc elit.</p>
+                                <p>Nullam posuere rhoncus odio. Maecenas pretium mauris at justo eleifend, nec dictum elit sagittis. Etiam aliquet augue a neque hendrerit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et suscipit tellus. Nullam rutrum, leo in bibendum suscipit, metus est imperdiet nibh, id mattis augue risus at dui. Sed vitae blandit nisl. Fusce ornare tellus vitae congue condimentum.</p>
+                                <p>Mauris tempus rhoncus sapien eget blandit. Curabitur sit amet erat quis urna volutpat elementum. Fusce vel lacinia mauris. Sed quis faucibus arcu, sit amet venenatis nisl. Etiam mi tortor, finibus sed orci eu, eleifend auctor ligula. Mauris rutrum, eros id mollis egestas, ante leo hendrerit sem, dapibus volutpat purus ipsum congue purus. Proin vel sagittis lacus. Sed pellentesque semper purus, a hendrerit ante sodales in. Integer ac mattis odio. Quisque convallis rutrum justo, sed condimentum orci commodo ut. In ullamcorper quam ex, vel posuere velit tincidunt nec. Cras molestie, elit vitae tincidunt fermentum, magna metus fermentum augue, ut fermentum mi arcu sagittis quam. Suspendisse quis lectus faucibus, facilisis odio ut, finibus risus. Vivamus gravida ex at purus egestas auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin et efficitur felis.</p>
+                            
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="c-taglist">
+    <div class="container">
+        <div class="row">
+            <div class="c-taglist__wrapper">
+                <ul class="c-taglist__list">
+                    <li class="c-taglist__item"><a href="#" class="c-taglist__link c-btn c-btn--compact">Tag 1</a></li>
+                    <li class="c-taglist__item"><a href="#" class="c-taglist__link c-btn c-btn--compact">Tag 2</a></li>
+                    <li class="c-taglist__item"><a href="#" class="c-taglist__link c-btn c-btn--compact">Tag 3</a></li>
+                    <li class="c-taglist__item"><a href="#" class="c-taglist__link c-btn c-btn--compact">Tag 4</a></li>
+                    <li class="c-taglist__item"><a href="#" class="c-taglist__link c-btn c-btn--compact">Tag 5</a></li>
+                    <li class="c-taglist__item"><a href="#" class="c-taglist__link c-btn c-btn--compact">Tag 6</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="c-author">
+    <div class="container">
+        <div class="row">
+            <div class="c-author__wrapper">
+                <div class="row">
+                    <div class="c-author__image-container">
+                        <img src="http://placehold.it/50x50/000?width=50" data-src="http://placehold.it/400x400/000?width=400" class="c-author__image lazyload" alt="Placeholder Image" />
+                    </div>
+                    <div class="c-author__content-container">
+                        <h2 class="c-author__name heading-small">Author Name</h2>
+                        <p class="c-author__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+<section class="c-socialshare c-socialshare--center">
+
+    <div class="container">
+        <div class="row">
+            <div class="c-socialshare__wrapper">
+                <h2 class="c-socialshare__title heading-small" id="share-label">Share:</h2>
+                <ul class="c-socialshare__items" aria-labelledby="share-label">
+                    <li class="c-socialshare__item">
+                        <a href="https://www.facebook.com/sharer/sharer.php?p[title]=&u=" target="_blank" class="c-socialshare__link js-socialshare">
+                            <span class="u-visually-hide">Share on Facebook</span>
+                            <i class="c-socialshare__link-icon icon-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="c-socialshare__item">
+                        <a href="https://twitter.com/intent/tweet?text=&url=" target="_blank" class="c-socialshare__link js-socialshare">
+                            <span class="u-visually-hide">Share on Twitter</span>
+                            <i class="c-socialshare__link-icon icon-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="c-socialshare__item">
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&title=&summary=&source=&url=" target="_blank" class="c-socialshare__link js-socialshare">
+                            <span class="u-visually-hide">Share on LinkedIn</span>
+                            <i class="c-socialshare__link-icon icon-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="c-socialshare__item">
+                        <a href="http://pinterest.com/pin/create/button/?description=&url=" target="_blank" class="c-socialshare__link js-socialshare">
+                            <span class="u-visually-hide">Share on Pinterest</span>
+                            <i class="c-socialshare__link-icon icon-pinterest" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="c-sectionheading">
+    <div class="container">
+        <div class="row">
+            <div class="c-sectionheading__wrapper">
+                <h2 class="c-sectionheading__title heading-large">Related Blog Posts</h2>
+                <p class="c-sectionheading__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex.</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="c-blog-listing">
+    <div class="container">
+        <div class="row">
+
+            
+
+            <article class="c-blog-listing__item ">
+    <div class="row">
+
+        
+        <div class="c-blog-listing__item-media-container">
+            <a href="#" class="c-blog-listing__item-media-link">
+                <picture>
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/700x394/000/fff?width=700" media="(min-width: 768px)" />
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/300x169/000/fff?width=300" media="(min-width: 300px)" />
+                    <img src="http://placehold.it/50x28/000/fff?width=50" class="c-blog-listing__item-media lazyload" alt="Placeholder image" />
+                </picture>
+            </a>
+        </div>
+        
+
+        <div class="c-blog-listing__item-content-container">
+            <h2 class="c-blog-listing__item-title heading">
+                <a href="#" class="c-blog-listing__item-title-link">Blog article title would go here</a>
+            </h2>
+
+            <ul class="c-blog-listing__item-meta">
+                <li class="c-blog-listing__item-meta-item">
+                    <time class="c-blog-listing__item-meta-value" datetime="2017-01-01">1st Jan 2017</time>
+                </li>
+                <li class="c-blog-listing__item-meta-item">
+                    <span class="c-blog-listing__item-meta-value">Author</span>
+                </li>
+            </ul>
+
+            <div class="c-blog-listing__item-summary-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="c-blog-listing__item ">
+    <div class="row">
+
+        
+        <div class="c-blog-listing__item-media-container">
+            <a href="#" class="c-blog-listing__item-media-link">
+                <picture>
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/700x394/000/fff?width=700" media="(min-width: 768px)" />
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/300x169/000/fff?width=300" media="(min-width: 300px)" />
+                    <img src="http://placehold.it/50x28/000/fff?width=50" class="c-blog-listing__item-media lazyload" alt="Placeholder image" />
+                </picture>
+            </a>
+        </div>
+        
+
+        <div class="c-blog-listing__item-content-container">
+            <h2 class="c-blog-listing__item-title heading">
+                <a href="#" class="c-blog-listing__item-title-link">Blog article title would go here</a>
+            </h2>
+
+            <ul class="c-blog-listing__item-meta">
+                <li class="c-blog-listing__item-meta-item">
+                    <time class="c-blog-listing__item-meta-value" datetime="2017-01-01">1st Jan 2017</time>
+                </li>
+                <li class="c-blog-listing__item-meta-item">
+                    <span class="c-blog-listing__item-meta-value">Author</span>
+                </li>
+            </ul>
+
+            <div class="c-blog-listing__item-summary-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="c-blog-listing__item ">
+    <div class="row">
+
+        
+        <div class="c-blog-listing__item-media-container">
+            <a href="#" class="c-blog-listing__item-media-link">
+                <picture>
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/700x394/000/fff?width=700" media="(min-width: 768px)" />
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/300x169/000/fff?width=300" media="(min-width: 300px)" />
+                    <img src="http://placehold.it/50x28/000/fff?width=50" class="c-blog-listing__item-media lazyload" alt="Placeholder image" />
+                </picture>
+            </a>
+        </div>
+        
+
+        <div class="c-blog-listing__item-content-container">
+            <h2 class="c-blog-listing__item-title heading">
+                <a href="#" class="c-blog-listing__item-title-link">Blog article title would go here</a>
+            </h2>
+
+            <ul class="c-blog-listing__item-meta">
+                <li class="c-blog-listing__item-meta-item">
+                    <time class="c-blog-listing__item-meta-value" datetime="2017-01-01">1st Jan 2017</time>
+                </li>
+                <li class="c-blog-listing__item-meta-item">
+                    <span class="c-blog-listing__item-meta-value">Author</span>
+                </li>
+            </ul>
+
+            <div class="c-blog-listing__item-summary-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<article class="c-blog-listing__item ">
+    <div class="row">
+
+        
+        <div class="c-blog-listing__item-media-container">
+            <a href="#" class="c-blog-listing__item-media-link">
+                <picture>
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/700x394/000/fff?width=700" media="(min-width: 768px)" />
+                    <source srcset="http://placehold.it/50x28/000/fff?width=50" data-srcset="http://placehold.it/300x169/000/fff?width=300" media="(min-width: 300px)" />
+                    <img src="http://placehold.it/50x28/000/fff?width=50" class="c-blog-listing__item-media lazyload" alt="Placeholder image" />
+                </picture>
+            </a>
+        </div>
+        
+
+        <div class="c-blog-listing__item-content-container">
+            <h2 class="c-blog-listing__item-title heading">
+                <a href="#" class="c-blog-listing__item-title-link">Blog article title would go here</a>
+            </h2>
+
+            <ul class="c-blog-listing__item-meta">
+                <li class="c-blog-listing__item-meta-item">
+                    <time class="c-blog-listing__item-meta-value" datetime="2017-01-01">1st Jan 2017</time>
+                </li>
+                <li class="c-blog-listing__item-meta-item">
+                    <span class="c-blog-listing__item-meta-value">Author</span>
+                </li>
+            </ul>
+
+            <div class="c-blog-listing__item-summary-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum scelerisque ex. Pellentesque feugiat id felis at ornare. Ut porta orci quis rutrum eleifend.</p>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+            
+
+        </div>
+    </div>
+</div>
+
+    </article>
+</main>
+<footer class="c-footer">
+    <div class="container">
+        <div class="row">
+            <div class="c-footer__legal">
+                <ul class="c-footer__legal-items">
+                    <li class="c-footer__legal-item"><a href="" class="c-footer__legal-link">Legal</a></li>
+                    <li class="c-footer__legal-item"><a href="" class="c-footer__legal-link">Conditions of use</a></li>
+                    <li class="c-footer__legal-item"><a href="" class="c-footer__legal-link">Privacy and use of cookies</a></li>
+                    <li class="c-footer__legal-item"><a href="" class="c-footer__legal-link">Terms of business</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="c-cookiebar c-cookiebar--hidden" id="js-cookiebar">
+
+
+    <p class="c-cookiebar__text p--small">This website uses cookies. For more information about these please click <a href="#" class="c-cookiebar__link">here</a>.<br>By continuing to browse you consent to the use of cookies</p>
+</div>
+<script>
+    /*! LAB.js (LABjs :: Loading And Blocking JavaScript)
+    v2.0.3 (c) Kyle Simpson
+    MIT License
+    */
+    (function(j){var N=j.$LAB,A="UseLocalXHR",B="AlwaysPreserveOrder",w="AllowDuplicates",C="CacheBust",l="Debug",D="BasePath",E=/^[^?#]*\//.exec(location.href)[0],F=/^\w+\:\/\/\/?[^\/]+/.exec(E)[0],i=document.head||document.getElementsByTagName("head"),O=(j.opera&&Object.prototype.toString.call(j.opera)=="[object Opera]")||("MozAppearance"in document.documentElement.style),m=function(){},G=m,s=document.createElement("script"),H=typeof s.preload=="boolean",t=H||(s.readyState&&s.readyState=="uninitialized"),I=!t&&s.async===true,P=!t&&!I&&!O;if(j.console&&j.console.log){if(!j.console.error)j.console.error=j.console.log;m=function(a){j.console.log(a)};G=function(a,c){j.console.error(a,c)}}function J(a){return Object.prototype.toString.call(a)=="[object Function]"}function K(a){return Object.prototype.toString.call(a)=="[object Array]"}function Q(a,c){var b=/^\w+\:\/\//;if(/^\/\/\/?/.test(a)){a=location.protocol+a}else if(!b.test(a)&&a.charAt(0)!="/"){a=(c||"")+a}return b.test(a)?a:((a.charAt(0)=="/"?F:E)+a)}function u(a,c){for(var b in a){if(a.hasOwnProperty(b)){c[b]=a[b]}}return c}function R(a){var c=false;for(var b=0;b<a.scripts.length;b++){if(a.scripts[b].ready&&a.scripts[b].exec_trigger){c=true;a.scripts[b].exec_trigger();a.scripts[b].exec_trigger=null}}return c}function v(a,c,b,d){a.onload=a.onreadystatechange=function(){if((a.readyState&&a.readyState!="complete"&&a.readyState!="loaded")||c[b])return;a.onload=a.onreadystatechange=null;d()}}function L(a){a.ready=a.finished=true;for(var c=0;c<a.finished_listeners.length;c++){a.finished_listeners[c]()}a.ready_listeners=[];a.finished_listeners=[]}function S(d,g,e,f,h){setTimeout(function(){var a,c=g.real_src,b;if("item"in i){if(!i[0]){setTimeout(arguments.callee,25);return}i=i[0]}a=document.createElement("script");if(g.type)a.type=g.type;if(g.charset)a.charset=g.charset;if(h){if(t){if(d[l])m("start script preload: "+c);e.elem=a;if(H){a.preload=true;a.onpreload=f}else{a.onreadystatechange=function(){if(a.readyState=="loaded")f()}}a.src=c}else if(h&&c.indexOf(F)==0&&d[A]){b=new XMLHttpRequest();if(d[l])m("start script preload (xhr): "+c);b.onreadystatechange=function(){if(b.readyState==4){b.onreadystatechange=function(){};e.text=b.responseText+"\n//@ sourceURL="+c;f()}};b.open("GET",c);b.send()}else{if(d[l])m("start script preload (cache): "+c);a.type="text/cache-script";v(a,e,"ready",function(){i.removeChild(a);f()});a.src=c;i.insertBefore(a,i.firstChild)}}else if(I){if(d[l])m("start script load (ordered async): "+c);a.async=false;v(a,e,"finished",f);a.src=c;i.insertBefore(a,i.firstChild)}else{if(d[l])m("start script load: "+c);v(a,e,"finished",f);a.src=c;i.insertBefore(a,i.firstChild)}},0)}function M(){var o={},T=t||P,q=[],r={},p;o[A]=true;o[B]=false;o[w]=false;o[C]=false;o[l]=false;o[D]="";function U(a,c,b){var d;function g(){if(d!=null){d=null;L(b)}}if(r[c.src].finished)return;if(!a[w])r[c.src].finished=true;d=b.elem||document.createElement("script");if(c.type)d.type=c.type;if(c.charset)d.charset=c.charset;v(d,b,"finished",g);if(b.elem){b.elem=null}else if(b.text){d.onload=d.onreadystatechange=null;d.text=b.text}else{d.src=c.real_src}i.insertBefore(d,i.firstChild);if(b.text){g()}}function V(c,b,d,g){var e,f,h=function(){b.ready_cb(b,function(){U(c,b,e)})},k=function(){b.finished_cb(b,d)};b.src=Q(b.src,c[D]);b.real_src=b.src+(c[C]?((/\?.*$/.test(b.src)?"&_":"?_")+~~(Math.random()*1E9)+"="):"");if(!r[b.src])r[b.src]={items:[],finished:false};f=r[b.src].items;if(c[w]||f.length==0){e=f[f.length]={ready:false,finished:false,ready_listeners:[h],finished_listeners:[k]};S(c,b,e,((g)?function(){e.ready=true;for(var a=0;a<e.ready_listeners.length;a++){e.ready_listeners[a]()}e.ready_listeners=[]}:function(){L(e)}),g)}else{e=f[0];if(e.finished){k()}else{e.finished_listeners.push(k)}}}function x(){var e,f=u(o,{}),h=[],k=0,y=false,n;function W(a,c){if(f[l])m("script preload finished: "+a.real_src);a.ready=true;a.exec_trigger=c;z()}function X(a,c){if(f[l])m("script execution finished: "+a.real_src);a.ready=a.finished=true;a.exec_trigger=null;for(var b=0;b<c.scripts.length;b++){if(!c.scripts[b].finished)return}c.finished=true;z()}function z(){while(k<h.length){if(J(h[k])){if(f[l])m("$LAB.wait() executing: "+h[k]);try{h[k++]()}catch(err){if(f[l])G("$LAB.wait() error caught: ",err)}continue}else if(!h[k].finished){if(R(h[k]))continue;break}k++}if(k==h.length){y=false;n=false}}function Y(){if(!n||!n.scripts){h.push(n={scripts:[],finished:true})}}e={script:function(){for(var g=0;g<arguments.length;g++){(function(a,c){var b;if(!K(a)){c=[a]}for(var d=0;d<c.length;d++){Y();a=c[d];if(J(a))a=a();if(!a)continue;if(K(a)){b=[].slice.call(a);b.unshift(d,1);[].splice.apply(c,b);d--;continue}if(typeof a=="string")a={src:a};a=u(a,{ready:false,ready_cb:W,finished:false,finished_cb:X});n.finished=false;n.scripts.push(a);V(f,a,n,(T&&y));y=true;if(f[B])e.wait()}})(arguments[g],arguments[g])}return e},wait:function(){if(arguments.length>0){for(var a=0;a<arguments.length;a++){h.push(arguments[a])}n=h[h.length-1]}else n=false;z();return e}};return{script:e.script,wait:e.wait,setOptions:function(a){u(a,f);return e}}}p={setGlobalDefaults:function(a){u(a,o);return p},setOptions:function(){return x().setOptions.apply(null,arguments)},script:function(){return x().script.apply(null,arguments)},wait:function(){return x().wait.apply(null,arguments)},queueScript:function(){q[q.length]={type:"script",args:[].slice.call(arguments)};return p},queueWait:function(){q[q.length]={type:"wait",args:[].slice.call(arguments)};return p},runQueue:function(){var a=p,c=q.length,b=c,d;for(;--b>=0;){d=q.shift();a=a[d.type].apply(null,d.args)}return a},noConflict:function(){j.$LAB=N;return p},sandbox:function(){return M()}};return p}j.$LAB=M();(function(a,c,b){if(document.readyState==null&&document[a]){document.readyState="loading";document[a](c,b=function(){document.removeEventListener(c,b,false);document.readyState="complete"},false)}})("addEventListener","DOMContentLoaded")})(this);
+</script>
+<script type="text/javascript">
+    $LAB.setGlobalDefaults({Debug:true, AllowDuplicates:false})
+    .script("//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js").wait(function() {
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        lazySizesConfig.loadMode = 1;
+        lazySizesConfig.expand = 0;
+    })
+    .script("/resources/js/plugins/ls.bgset.min.js")
+    .script("/resources/js/plugins/lazysizes.min.js")
+    .script("/resources/js/plugins/picturefill.min.js")
+    .script("/resources/js/plugins/jquery.validate.min.js")
+    .script("/resources/js/plugins/jquery.validate.webforms.min.js")
+    .script("/resources/js/plugins/selection-sharer.min.js")
+    .script("/resources/js/plugins/selection-sharer.min.js")
+    .script("/resources/js/plugins/jquery.fitvid.min.js").wait()
+    .script("/resources/js/global.min.js").wait(function() {
+        BEGlobal.Init();
+        FEGlobal.Init();
+    });
+</script>
+
+<script type="text/javascript">
+    $LAB
+    .script("/resources/js/blogarticle.min.js").wait(function() {
+        BEBlogArticle.Init();
+        FEBlogArticle.Init();
+    });
+</script>
+</body>
+</html>
