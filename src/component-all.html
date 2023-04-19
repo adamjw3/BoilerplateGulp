@@ -102,25 +102,25 @@
 @@include('includes/globaljs.html')
 <script type="text/javascript">
     $LAB
-    .script("/resources/js/plugins/slick.min.js")
-    .script("/resources/js/accordion.min.js").wait(function() {
+    .script("../resources/js/plugins/slick.min.js")
+    .script("../resources/js/accordion.min.js").wait(function() {
         BEAccordion.Init();
         FEAccordion.Init();
     })
-    .script("/resources/js/carousel.min.js").wait(function() {
+    .script("../resources/js/carousel.min.js").wait(function() {
         BECarousel.Init();
         FECarousel.Init();
     })
-    .script("/resources/js/socialshare.min.js").wait(function() {
+    .script("../resources/js/socialshare.min.js").wait(function() {
         BESocialShare.Init();
         FESocialShare.Init();
     })
-    .script("/resources/js/tabs.min.js").wait(function() {
+    .script("../resources/js/tabs.min.js").wait(function() {
         BETabs.Init();
         FETabs.Init();
     })
     .script("//www.google.com/recaptcha/api.js").wait()
-    .script("/resources/js/download.min.js").wait(function() {
+    .script("../resources/js/download.min.js").wait(function() {
         BEDownload.Init();
         FEDownload.Init();
     });
